@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập quản lý</title>
+    <link rel="icon" href="../assets/img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/boostrap/bootstrap-4.5.2.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
+</head>
+<body>
+     <!-- Login manage-->
+    <form action="handle-login-manage.php" method="POST"> 
+     <div id="log-in-active"  >
+        <div id="modal-log-in">
+            <div class="modal-log-in__label">
+              <img class="text-center" src="../assets/img/Logo.png" alt="" width="80" height="80">
+              <span class="label-app">Viet Tour</span>
+            </div>
+  
+            <!-- Login content -->
+            <div class="modal-log-in__content">
+              <form action="" method="POST">
+                  <h2 class="text-center">Đăng nhập quản lý</h2>
+                  <div class="log-in__input-section">
+                    <label for=""></label>
+                    <input type="text" name="email-register" id="email-register" placeholder="ID Admin">
+                  </div>
+    
+                  <div class="log-in__input-section">
+                    <input type="password" name="password-register" id="password-register" placeholder="Mật khẩu">
+                  </div>
+    
+                  <!-- <a href="" class="forget-password">Quên mật khẩu</a> -->
+                  <button type="submit" class="btn log-in__btn">Đăng nhập</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

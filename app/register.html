@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="icon" href="../assets/img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/boostrap/bootstrap-4.5.2.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+    <form action="handle-register.php" method="POST"> 
+    <!-- Register -->
+    <div id="register">
+        <div id="modal-register">
+          <div class="modal-register__label">
+            <img class="text-center" src="../assets/img/Logo.png" alt="" width="80" height="80">
+            <span class="label-app">Viet Tour</span>
+          </div>
+
+          <!-- Register content -->
+          <div class="modal-register__content">
+             <form action="" method="POST" id="register_form">
+                  <h2 class="text-center">Đăng ký</h2>
+                  <div class="register__input-section">
+                    <label for="name">Họ tên:</label>
+                    <input type="text" name="name" id="name" placeholder="Họ tên">
+                  </div>
+
+                  <div class="register__input-section">
+                    <label for="birth-year">Năm sinh:</label>
+                    <input type="text" name="birth-year" id="birth_year" placeholder="Năm sinh">
+                  </div>
+
+                  <div class="register__input-section register__input-section--radio">
+                    <label for="">Giới tính:</label>
+                    <div class="register__input-section--radio">
+                        <label class="label-radio" for="male">Nam</label>
+                        <input type="radio" name="sex" id="male" checked="checked">
+                        <label class="label-radio" for="female" style="margin-left: 24px;">Nữ</label>
+                        <input type="radio" name="sex" id="female" checked="checked">
+                    </div>
+                  </div>
+
+                  <div class="register__input-section">
+                    <label for="place">Địa chỉ:</label>
+                    <input type="text" name="place" id="place" placeholder="Địa chỉ">
+                  </div>
+
+                  <div class="register__input-section">
+                    <label for="phone_number">Số điện thoại:</label>
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Số điện thoại">
+                  </div>
+
+                  <div class="register__input-section">
+                    <label for="email_register">Email:</label>
+                    <input type="email" name="email_register" id="email_register" placeholder="Email">
+                  </div>
+
+                  <div class="register__input-section">
+                    <label for="password_register">Mật khẩu:</label>
+                    <input type="password" name="password_register" id="password_register" placeholder="Mật khẩu">
+                  </div>
+
+                  <div class="register__input-section">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Xác nhận thông tin</label>
+                  </div>
+
+                  <button type="submit" class="btn register__btn" id="register_button">Đăng ký</button>
+             </form>
+          </div>
+        </div>
+  </div>
+  
+      </form>  
+<!-- <script >
+      $('#register_form').validate({
+    rules: {
+        name: 'required',
+        birth_year: 'required',
+        phone_number: {
+            required: true,
+            pattern: /[84|0].{9,}/
+        },
+        email_register: 'required email',
+        password_register: 'required',
+        checkbox: 'required'
+    },
+    messages: {
+        name: 'Bạn chưa điền tên',
+        birth_year: 'Bạn chưa điền năm sinh',
+        phone_number: {
+            required: 'Bạn chưa điền số điện thoại',
+            pattern: 'Số điện thoại phải bắt đầu bằng 0 hoặc 84 và ít nhất 9 chữ số',
+        },
+        email_register: {
+            required: 'Bạn chưa điền email',
+            email: 'Email phải theo định dạng abc@gmail.com'
+        },
+        password_register: 'Bạn chưa điền mật khẩu',
+        checkbox: 'Phải bấm xác nhận thông tin'
+    }
+})
+$("#register_button").click(function () {
+    if ($("#register_form").valid()) {
+        alert("Đăng ký thành công");
+    }
+})
+</script> -->
+</body>
+</html>

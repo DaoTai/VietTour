@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="icon" href="../assets/img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/boostrap/bootstrap-4.5.2.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+     <!-- Login -->
+     <form action="handle-login.php" method="POST"> 
+      <div id="log-in-active" >
+        <div id="modal-log-in">
+            <div class="btn-close ">
+              <i class="fas fa-times" href='/7-11/index2.html' ></i>
+            </div>
+  
+            <div class="modal-log-in__label">
+              <img class="text-center" src="../assets/img/Logo.png" alt="" width="80" height="80">
+              <span class="label-app">Viet Tour</span>
+            </div>
+  
+            <!-- Login content -->
+            <div class="modal-log-in__content">
+              <h3 class="text-center">Đăng nhập</h3>
+                <div class="log-in__input-section">
+                  <label for=""></label>
+                  <input type="email" name="email-register" id="email-register" placeholder="Địa chỉ email">
+                </div>
+  
+                <div class="log-in__input-section">
+                  <input type="password" name="password-register" id="password-register" placeholder="Mật khẩu">
+                </div>
+  
+                <button class="btn log-in__btn">Đăng nhập</button>
+            </div>
+        </div>
+      </div>
+      </form>
+</body>
+</html>
